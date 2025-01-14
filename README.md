@@ -37,6 +37,19 @@ my_examples/
 
 ---
 
+## **Git 사용 방법**
+
+### **Git 설치**
+1. [Git 공식 웹사이트](https://git-scm.com/downloads)에서 Git을 다운로드하고 설치합니다.
+2. 설치 중 "Git from the command line and also from 3rd-party software" 옵션을 선택하여 Git을 시스템 PATH에 추가합니다.
+
+### **Git Bash 실행**
+1. Git 설치 후, **Git Bash**를 실행합니다.
+2. 터미널 창에서 저장소를 클론합니다:
+   ```bash
+   git clone https://github.com/yonghwadragon/my_examples.git
+
+---
 ### **2. 실행**
 1. **`run_examples.py` 실행**:
    - 터미널에서 다음 명령어를 실행합니다:
