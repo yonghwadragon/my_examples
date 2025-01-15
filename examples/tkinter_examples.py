@@ -57,3 +57,49 @@ def example_4():
     label.pack()
 
     window.mainloop()
+
+def example_5():
+    """간단한 계산기"""
+
+    # 메인 윈도우 설정
+    window = tk.Tk()
+    window.title("Calculator")
+    window.geometry("600x800")
+
+    # 숫자 버튼 배치 (0~9)
+    buttons_frame = tk.Frame(window)
+    buttons_frame.pack(pady=20)
+
+    # 숫자 버튼
+    numbers = [
+        [7, 8, 9],
+        [4, 5, 6],
+        [1, 2, 3],
+        [0]
+    ]
+
+    for row in numbers:
+        row_frame = tk.Frame(buttons_frame)
+        row_frame.pack()
+        for num in row:
+            btn = tk.Button(row_frame, text=str(num), width=12, height=5, font=("Arial", 18))
+            btn.pack(side="left", padx=5, pady=5)
+
+    # 연산 버튼
+    operations = ["+", "-", "*", "/"]
+    operations_frame = tk.Frame(window)
+    operations_frame.pack(side="right", padx=10)
+
+    for op in operations:
+        op_btn = tk.Button(operations_frame, text=op, width=12, height=5, font=("Arial", 18))
+        op_btn.pack(pady=10)
+
+    # Clear 버튼
+    clear_btn = tk.Button(window, text="Clear", width=25, height=3, font=("Arial", 18), bg="red", fg="white")
+    clear_btn.pack(pady=10)
+
+    # 결과 버튼
+    equals_btn = tk.Button(window, text="=", width=25, height=3, font=("Arial", 18), bg="blue", fg="white")
+    equals_btn.pack(pady=10)
+
+    window.mainloop()
