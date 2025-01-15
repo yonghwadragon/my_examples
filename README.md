@@ -16,7 +16,7 @@ my_examples/
 │   ├── tkinter_examples.py    # tkinter를 활용한 GUI 관련 예제 코드
 │   ├── ml_examples.py         # 머신러닝 예제 코드
 │   ├── analysis_examples.py   # 데이터 분석 예제 코드
-│   ├── mmm.py                 # 파이썬 예제 코드
+│   ├── mmm.py                 # 기타 예제 코드 (테스트용 또는 일반 기능)
 │
 ├── modules/                   # 모듈 관리 및 실행 로직
 │   ├── __init__.py            # 패키지 초기화
